@@ -18,7 +18,6 @@ def border_collie_optimization(fname='func1', n=30, gen=200, verbose=True):
     Border Collie Optimization (BCO) Algorithm
     
     Parameters:
-    -----------
     fname : str
         Name of the optimization function (e.g., 'func1', 'func2', ..., 'func19')
     n : int
@@ -29,7 +28,6 @@ def border_collie_optimization(fname='func1', n=30, gen=200, verbose=True):
         If True, print progress information (default: True)
     
     Returns:
-    --------
     fopt : float
         Best (optimal) fitness value found
     best_position : numpy.ndarray
@@ -238,7 +236,6 @@ def run_multiple_runs(fname='func1', n=30, gen=200, runs=30, verbose=True):
     Run BCO algorithm multiple times for statistical analysis
     
     Parameters:
-    -----------
     fname : str
         Function name
     n : int
@@ -251,7 +248,6 @@ def run_multiple_runs(fname='func1', n=30, gen=200, runs=30, verbose=True):
         If True, print progress
     
     Returns:
-    --------
     results : dict
         Dictionary containing best_fitness, mean, std, min, max for all runs
     all_best_fitness : numpy.ndarray
@@ -312,7 +308,7 @@ def run_multiple_runs(fname='func1', n=30, gen=200, runs=30, verbose=True):
     return results, all_best_fitness, all_positions, all_history
 
 
-# ==================== TEST CODE ====================
+# TEST CODE 
 
 if __name__ == "__main__":
     print("=" * 70)
