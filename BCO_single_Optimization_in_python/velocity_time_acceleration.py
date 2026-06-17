@@ -10,7 +10,6 @@ def update_velocity_time_acceleration(Vt, n, L, a, t, pop, fit, eye_flag):
     Update velocities, accelerations, and times for dogs and sheep based on herding behavior
     
     Parameters:
-    -----------
     Vt : numpy.ndarray
         Current velocity matrix of shape (n, L)
     n : int
@@ -29,7 +28,6 @@ def update_velocity_time_acceleration(Vt, n, L, a, t, pop, fit, eye_flag):
         Flag indicating if eyeing behavior is active (1 = eyeing, 0 = normal)
     
     Returns:
-    --------
     Vt1 : numpy.ndarray
         Updated velocity matrix
     acc : numpy.ndarray
@@ -274,7 +272,7 @@ def update_velocity_vectorized(Vt, n, L, a, t, pop, fit, eye_flag):
     return Vt1, acc, t1, r1, l1, tempg, temps
 
 
-# ==================== TEST CODE ====================
+# TEST CODE 
 
 if __name__ == "__main__":
     print("=" * 70)
