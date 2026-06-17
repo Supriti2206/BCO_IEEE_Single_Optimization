@@ -11,12 +11,10 @@ def func_details(fn):
     for the specified benchmark function
     
     Parameters:
-    -----------
     fn : str
         Function name (e.g., 'func1', 'func2', etc.)
     
     Returns:
-    --------
     fobj : function
         The objective function
     lb : float or list
@@ -147,8 +145,7 @@ def func_details(fn):
     return fobj, lb, ub, dim
 
 
-# ==================== BENCHMARK FUNCTIONS ====================
-
+# BENCHMARK FUNCTIONS 
 def func1(x):
     """Sphere function"""
     return np.sum(x**2)
@@ -372,7 +369,7 @@ def func19(x):
     return op
 
 
-# ==================== UTILITY FUNCTION ====================
+# UTILITY FUNCTION 
 
 def ufun(x, a, k, m):
     """
@@ -382,7 +379,7 @@ def ufun(x, a, k, m):
     return k * ((x - a)**m) * (x > a) + k * ((-x - a)**m) * (x < (-a))
 
 
-# ==================== TEST CODE ====================
+# TEST CODE 
 
 if __name__ == "__main__":
     print("=" * 70)
