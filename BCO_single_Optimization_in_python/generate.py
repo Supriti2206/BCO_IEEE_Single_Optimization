@@ -10,7 +10,6 @@ def generate(n, L, ub, lb):
     Generate initial random population within the specified bounds
     
     Parameters:
-    -----------
     n : int
         Number of individuals in the population (population size)
     L : int
@@ -25,7 +24,6 @@ def generate(n, L, ub, lb):
         - If array: different lower bound for each dimension
     
     Returns:
-    --------
     M : numpy.ndarray
         Matrix of generated positions (size: n x L)
     x : numpy.ndarray
@@ -73,7 +71,6 @@ def generate_simple(n, L, ub, lb):
     Simplified version of generate function without the x matrix
     
     Parameters:
-    -----------
     n : int
         Number of individuals in the population
     L : int
@@ -84,7 +81,6 @@ def generate_simple(n, L, ub, lb):
         Lower bound(s) for variables
     
     Returns:
-    --------
     M : numpy.ndarray
         Matrix of generated positions (size: n x L)
     """
@@ -108,7 +104,7 @@ def generate_simple(n, L, ub, lb):
     return M
 
 
-# ==================== TEST CODE ====================
+# TEST CODE 
 
 if __name__ == "__main__":
     print("=" * 70)
