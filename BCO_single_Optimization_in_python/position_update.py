@@ -10,7 +10,6 @@ def update(pop, Vt, t, acc, n, L, eye_flag):
     Update positions of dogs and sheep based on velocity, acceleration, and time
     
     Parameters:
-    -----------
     pop : numpy.ndarray
         Current population positions matrix of shape (n, L)
         (Note: This parameter is kept for compatibility but not used in calculation)
@@ -28,7 +27,6 @@ def update(pop, Vt, t, acc, n, L, eye_flag):
         Flag indicating if eyeing behavior is active (1 = eyeing, 0 = normal)
     
     Returns:
-    --------
     pop1 : numpy.ndarray
         Updated population positions matrix of shape (n, L)
     """
@@ -61,7 +59,6 @@ def update_vectorized(pop, Vt, t, acc, n, L, eye_flag):
     Vectorized version of update function for better performance (faster)
     
     Parameters:
-    -----------
     pop : numpy.ndarray
         Current population positions matrix (kept for compatibility)
     Vt : numpy.ndarray
@@ -78,7 +75,6 @@ def update_vectorized(pop, Vt, t, acc, n, L, eye_flag):
         Flag indicating if eyeing behavior is active
     
     Returns:
-    --------
     pop1 : numpy.ndarray
         Updated population positions matrix of shape (n, L)
     """
@@ -118,7 +114,6 @@ def update_detailed(pop, Vt, t, acc, n, L, eye_flag, n_dogs=3):
     More detailed version with explicit dog/sheep separation and parameter control
     
     Parameters:
-    -----------
     pop : numpy.ndarray
         Current population positions (kept for compatibility)
     Vt : numpy.ndarray
@@ -137,7 +132,6 @@ def update_detailed(pop, Vt, t, acc, n, L, eye_flag, n_dogs=3):
         Number of dogs (default: 3)
     
     Returns:
-    --------
     pop1 : numpy.ndarray
         Updated positions
     """
@@ -171,7 +165,7 @@ def update_detailed(pop, Vt, t, acc, n, L, eye_flag, n_dogs=3):
     return pop1
 
 
-# ==================== TEST CODE ====================
+# TEST CODE 
 
 if __name__ == "__main__":
     print("=" * 70)
