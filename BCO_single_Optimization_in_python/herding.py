@@ -11,7 +11,6 @@ def herding(pop, Vt, fit, n, L, a, t):
     Individuals with better fitness come first
     
     Parameters:
-    -----------
     pop : numpy.ndarray
         Population positions matrix of shape (n, L)
     Vt : numpy.ndarray
@@ -28,7 +27,6 @@ def herding(pop, Vt, fit, n, L, a, t):
         Time array of shape (n,)
     
     Returns:
-    --------
     pop1 : numpy.ndarray
         Sorted population positions (best fitness first)
     Vt1 : numpy.ndarray
@@ -69,7 +67,6 @@ def herding_vectorized(pop, Vt, fit, n, L, a, t):
     Vectorized version of herding function for better performance
     
     Parameters:
-    -----------
     pop : numpy.ndarray
         Population positions matrix of shape (n, L)
     Vt : numpy.ndarray
@@ -86,7 +83,6 @@ def herding_vectorized(pop, Vt, fit, n, L, a, t):
         Time array of shape (n,)
     
     Returns:
-    --------
     pop1 : numpy.ndarray
         Sorted population positions
     Vt1 : numpy.ndarray
@@ -117,7 +113,6 @@ def get_dogs_and_sheep(pop, Vt, fit, a, t, n_dogs=3):
     Separate dogs (best individuals) from sheep based on fitness
     
     Parameters:
-    -----------
     pop : numpy.ndarray
         Population positions matrix
     Vt : numpy.ndarray
@@ -132,7 +127,6 @@ def get_dogs_and_sheep(pop, Vt, fit, a, t, n_dogs=3):
         Number of dogs (default: 3)
     
     Returns:
-    --------
     dogs_pop : numpy.ndarray
         Positions of dogs (best individuals)
     dogs_Vt : numpy.ndarray
@@ -177,8 +171,7 @@ def get_dogs_and_sheep(pop, Vt, fit, a, t, n_dogs=3):
             sheep_pop, sheep_Vt, sheep_fit, sheep_a, sheep_t)
 
 
-# ==================== TEST CODE ====================
-
+# TEST CODE 
 if __name__ == "__main__":
     print("=" * 70)
     print("Testing Herding Function for BCO Algorithm")
