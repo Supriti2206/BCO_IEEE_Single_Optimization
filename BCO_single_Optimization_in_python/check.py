@@ -12,7 +12,6 @@ def check(pop, n, L, ub, lb, acc, Vt, t):
     If values are out of bounds, NaN, or zero, reinitialize them with random values
     
     Parameters:
-    -----------
     pop : numpy.ndarray
         Population positions matrix of shape (n, L)
     n : int
@@ -31,7 +30,6 @@ def check(pop, n, L, ub, lb, acc, Vt, t):
         Time array of shape (n,)
     
     Returns:
-    --------
     pop1 : numpy.ndarray
         Corrected population positions
     acc1 : numpy.ndarray
@@ -97,7 +95,6 @@ def check_vectorized(pop, n, L, ub, lb, acc, Vt, t):
     Vectorized version of check function for better performance
     
     Parameters:
-    -----------
     pop : numpy.ndarray
         Population positions matrix of shape (n, L)
     n : int
@@ -116,7 +113,6 @@ def check_vectorized(pop, n, L, ub, lb, acc, Vt, t):
         Time array of shape (n,)
     
     Returns:
-    --------
     pop1 : numpy.ndarray
         Corrected population positions
     acc1 : numpy.ndarray
@@ -202,13 +198,11 @@ def check_with_logging(pop, n, L, ub, lb, acc, Vt, t, verbose=False):
     Check function with logging to track corrections made
     
     Parameters:
-    -----------
     pop, n, L, ub, lb, acc, Vt, t : same as check()
     verbose : bool
         If True, print information about corrections made
     
     Returns:
-    --------
     pop1, acc1, t1, Vt1 : corrected arrays
     corrections : dict
         Dictionary containing counts of corrections made
@@ -325,7 +319,7 @@ def check_with_logging(pop, n, L, ub, lb, acc, Vt, t, verbose=False):
     return pop1, acc1, t1, Vt1, corrections
 
 
-# ==================== TEST CODE ====================
+# TEST CODE 
 
 if __name__ == "__main__":
     print("=" * 70)
